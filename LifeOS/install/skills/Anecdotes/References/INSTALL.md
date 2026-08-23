@@ -44,7 +44,7 @@ CLAUDE_DIR="$HOME/.claude"
 if [ -d "$CLAUDE_DIR/skills/Mnemosyne" ]; then
   echo "OK Mnemosyne skill found"
 else
-  echo "ERROR Mnemosyne pack required — install Packs/Mnemosyne first, then retry"
+  echo "ERROR Mnemosyne pack required — install the Mnemosyne skill first, then retry"
   exit 1
 fi
 

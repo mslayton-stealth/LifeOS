@@ -1,7 +1,7 @@
 /**
  * CayleyClient — slim HTTP wrapper for Cayley's REST API.
  *
- * Vendored from the Mnemosyne pack (`Packs/Mnemosyne/src/Tools/CayleyClient.ts`)
+ * Vendored from the Mnemosyne pack (`LifeOS/install/skills/Mnemosyne/Tools/CayleyClient.ts`)
  * so this pack is self-contained at runtime. The two are functionally identical;
  * keep them in sync when patching.
  */

@@ -24,7 +24,7 @@ The full predicate + modality + domain + edge vocabulary used by this pack. The 
 | `/anecdote/anecdote/insight` | literal | Portable heuristic |
 | `/anecdote/anecdote/insight_explicit` | literal `"true"` / `"false"` | Honest flag — did the source say this, or did you infer it? |
 
-Plus the standard Mnemosyne envelope (see `Packs/Mnemosyne/src/References/SchemaGuide.md`):
+Plus the standard Mnemosyne envelope (see `LifeOS/install/skills/Mnemosyne/References/SchemaGuide.md`):
 
 | Predicate | Notes |
 |---|---|
@@ -129,4 +129,4 @@ The upstream private stack has additional types this prototype omits:
 - `/anecdote/edge/consent_under`, `/anecdote/edge/used_in`, `/anecdote/edge/billed_to`
 - Contributor `payout_address`
 
-If you need any of those, you'll need to add them yourself or graduate to a future `Packs/AnecdotesCommons/` pack. This prototype is intentionally substrate-only.
+If you need any of those, you'll need to add them yourself or graduate to a future `AnecdotesCommons` skill. This prototype is intentionally substrate-only.

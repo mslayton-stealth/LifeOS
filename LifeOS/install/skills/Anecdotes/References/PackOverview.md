@@ -108,7 +108,7 @@ The Anecdotes CLI also wraps common queries (`query --by-tag foo`, `query --by-d
 Point your DA at this directory:
 
 ```
-"Install the Anecdotes pack from PAI/Packs/Anecdotes/"
+"Install the Anecdotes skill from LifeOS/install/skills/Anecdotes/"
 ```
 
 The wizard checks for a running Mnemosyne first, then copies the skill, seeds the anecdotes schema into the existing Cayley, and optionally fetches the Project Gutenberg prototype corpus. Pre-reqs: Mnemosyne pack installed and Cayley running, Bun, an LLM you can hand prompts to.

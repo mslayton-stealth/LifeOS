@@ -109,7 +109,7 @@ If you want cloud deployment, see `References/CloudDeployment.md` for the recomm
 Point your DA at this directory:
 
 ```
-"Install the Mnemosyne pack from PAI/Packs/Mnemosyne/"
+"Install the Mnemosyne skill from LifeOS/install/skills/Mnemosyne/"
 ```
 
 The DA reads `INSTALL.md` and walks through the 5-phase wizard. Pre-reqs: Cayley binary (the installer will check for `brew` and offer to install), Bun, and write access to `~/.claude/`.
