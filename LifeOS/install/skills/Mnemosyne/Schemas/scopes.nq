@@ -1,0 +1,32 @@
+# Mnemosyne /epistemology/scope schema — PAI-native context scopes
+# Loaded by: Tools/SeedSchemas.ts (after classifiers)
+# Standing constraint: no CRLF — Cayley silently fails on \r.
+#
+# Scope is the context within which an assertion holds. The same claim can be
+# verified in one scope and fictional in another. Add your own scopes here as
+# you partition your knowledge: per-project scopes, per-domain scopes, etc.
+
+# ── PAI runtime scopes ──────────────────────────────────────────────────────
+</epistemology/scope/pai_memory> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_memory> </type/object/name> "pai:memory" .
+</epistemology/scope/pai_memory> </common/topic/description> "PAI runtime memory layer — default scope for migrated KNOWLEDGE/ and ad-hoc graph asserts." .
+
+</epistemology/scope/pai_knowledge> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_knowledge> </type/object/name> "pai:knowledge" .
+</epistemology/scope/pai_knowledge> </common/topic/description> "Curated KNOWLEDGE/ entries — People, Companies, Ideas, Research." .
+
+</epistemology/scope/pai_work> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_work> </type/object/name> "pai:work" .
+</epistemology/scope/pai_work> </common/topic/description> "Work session ISA tracking — coordination tasks and progress nodes mirror here." .
+
+</epistemology/scope/pai_learning> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_learning> </type/object/name> "pai:learning" .
+</epistemology/scope/pai_learning> </common/topic/description> "LEARNING/ extracts — failures, signals, synthesis, reflections." .
+
+</epistemology/scope/pai_project> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_project> </type/object/name> "pai:project" .
+</epistemology/scope/pai_project> </common/topic/description> "Per-project scope umbrella. Suffix with /{project_name} for specific projects, e.g. /epistemology/scope/pai_project_pai." .
+
+</epistemology/scope/pai_system> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/pai_system> </type/object/name> "pai:system" .
+</epistemology/scope/pai_system> </common/topic/description> "PAI infrastructure — hooks, settings, install/upgrade history." .

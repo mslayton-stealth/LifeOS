@@ -1,0 +1,257 @@
+# Mnemosyne /epistemology schema — Cayley NQuads (LF only, no blank lines in blocks)
+# Loaded by: Tools/SeedSchemas.ts
+# Standing constraint: no CRLF — Cayley silently fails on embedded \r.
+
+# ── Type: EpistemicState ────────────────────────────────────────────────────
+</epistemology/epistemic_state> </type/object/type> </type/type> .
+</epistemology/epistemic_state> </type/object/name> "EpistemicState" .
+</epistemology/epistemic_state> </common/topic/description> "Status of any assertion at a point in time. Partial order, not binary." .
+
+# EpistemicState values (partial order: verified > putative > speculative > contested|debunked|fictional)
+</epistemology/verified> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/verified> </type/object/name> "verified" .
+</epistemology/verified> </epistemology/state_rank> "1" .
+</epistemology/verified> </common/topic/description> "Prediction record is positive; independently replicated." .
+
+</epistemology/putative> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/putative> </type/object/name> "putative" .
+</epistemology/putative> </epistemology/state_rank> "2" .
+</epistemology/putative> </common/topic/description> "Plausible, some supporting evidence, not yet stress-tested." .
+
+</epistemology/speculative> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/speculative> </type/object/name> "speculative" .
+</epistemology/speculative> </epistemology/state_rank> "3" .
+</epistemology/speculative> </common/topic/description> "Structurally coherent, minimal direct evidence." .
+
+</epistemology/contested> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/contested> </type/object/name> "contested" .
+</epistemology/contested> </epistemology/state_rank> "4" .
+</epistemology/contested> </common/topic/description> "Active conflict between supporting and contradicting evidence." .
+
+</epistemology/debunked> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/debunked> </type/object/name> "debunked" .
+</epistemology/debunked> </epistemology/state_rank> "5" .
+</epistemology/debunked> </common/topic/description> "Falsification attempt succeeded. Preserved for provenance, never deleted." .
+
+</epistemology/fictional> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/fictional> </type/object/name> "fictional" .
+</epistemology/fictional> </epistemology/state_rank> "5" .
+</epistemology/fictional> </common/topic/description> "True within a scoped narrative context; false outside it." .
+
+</epistemology/emergent> </type/object/type> </epistemology/epistemic_state> .
+</epistemology/emergent> </type/object/name> "emergent" .
+</epistemology/emergent> </epistemology/state_rank> "2" .
+</epistemology/emergent> </common/topic/description> "Arose from intersection of prior nodes; neither agent anticipated it alone." .
+
+# ── Type: JustificationType ─────────────────────────────────────────────────
+</epistemology/justification_type> </type/object/type> </type/type> .
+</epistemology/justification_type> </type/object/name> "JustificationType" .
+</epistemology/justification_type> </common/topic/description> "What grounds an assertion." .
+
+</epistemology/empirical> </type/object/type> </epistemology/justification_type> .
+</epistemology/empirical> </type/object/name> "empirical" .
+</epistemology/empirical> </common/topic/description> "Direct measurement or observation." .
+
+</epistemology/inferential> </type/object/type> </epistemology/justification_type> .
+</epistemology/inferential> </type/object/name> "inferential" .
+</epistemology/inferential> </common/topic/description> "Derived from other verified/putative nodes." .
+
+</epistemology/testimonial> </type/object/type> </epistemology/justification_type> .
+</epistemology/testimonial> </type/object/name> "testimonial" .
+</epistemology/testimonial> </common/topic/description> "Reported by a trusted agent." .
+
+</epistemology/intuitive> </type/object/type> </epistemology/justification_type> .
+</epistemology/intuitive> </type/object/name> "intuitive" .
+</epistemology/intuitive> </common/topic/description> "Pattern recognition without explicit chain. Flag for verification, not dismissal." .
+
+</epistemology/emergent_justification> </type/object/type> </epistemology/justification_type> .
+</epistemology/emergent_justification> </type/object/name> "emergent" .
+</epistemology/emergent_justification> </common/topic/description> "Product of inside-out query; structurally justified." .
+
+# ── Type: InferencePattern ───────────────────────────────────────────────────
+</epistemology/inference_pattern> </type/object/type> </type/type> .
+</epistemology/inference_pattern> </type/object/name> "InferencePattern" .
+</epistemology/inference_pattern> </common/topic/description> "Named pattern by which emergent nodes arise. Seeded; extensible." .
+
+</epistemology/inference/closure> </type/object/type> </epistemology/inference_pattern> .
+</epistemology/inference/closure> </type/object/name> "closure" .
+</epistemology/inference/closure> </common/topic/description> "Cyclic self-referential closure — unreachable reductively, discoverable by scaling up." .
+
+</epistemology/inference/spanning_tree_consensus> </type/object/type> </epistemology/inference_pattern> .
+</epistemology/inference/spanning_tree_consensus> </type/object/name> "spanning-tree-consensus" .
+</epistemology/inference/spanning_tree_consensus> </common/topic/description> "Distributed convergence via fan-in — peer review, gossip protocols, ensemble vote." .
+
+</epistemology/inference/phase_coherence> </type/object/type> </epistemology/inference_pattern> .
+</epistemology/inference/phase_coherence> </type/object/name> "phase-coherence" .
+</epistemology/inference/phase_coherence> </common/topic/description> "Temporal synchronization across independent agents." .
+
+</epistemology/inference/fractal_recurrence> </type/object/type> </epistemology/inference_pattern> .
+</epistemology/inference/fractal_recurrence> </type/object/name> "fractal-recurrence" .
+</epistemology/inference/fractal_recurrence> </common/topic/description> "Pattern recognized at multiple abstraction scales simultaneously." .
+
+</epistemology/inference/ontology_rotation> </type/object/type> </epistemology/inference_pattern> .
+</epistemology/inference/ontology_rotation> </type/object/name> "ontology-rotation" .
+</epistemology/inference/ontology_rotation> </common/topic/description> "Structural preservation across coordinate systems or vocabularies. Rotation, not translation." .
+
+# ── Type: EvidenceNode ───────────────────────────────────────────────────────
+</epistemology/evidence_node> </type/object/type> </type/type> .
+</epistemology/evidence_node> </type/object/name> "EvidenceNode" .
+</epistemology/evidence_node> </common/topic/description> "A discrete piece of evidence. Links to assertions it supports or contradicts." .
+
+</epistemology/evidence_node/source> </type/object/type> </type/property> .
+</epistemology/evidence_node/source> </type/object/name> "source" .
+</epistemology/evidence_node/source> </type/property/schema> </epistemology/evidence_node> .
+
+</epistemology/evidence_node/date_acquired> </type/object/type> </type/property> .
+</epistemology/evidence_node/date_acquired> </type/object/name> "date_acquired" .
+</epistemology/evidence_node/date_acquired> </type/property/schema> </epistemology/evidence_node> .
+
+</epistemology/evidence_node/methodology> </type/object/type> </type/property> .
+</epistemology/evidence_node/methodology> </type/object/name> "methodology" .
+</epistemology/evidence_node/methodology> </type/property/schema> </epistemology/evidence_node> .
+
+</epistemology/evidence_node/raw_data_ref> </type/object/type> </type/property> .
+</epistemology/evidence_node/raw_data_ref> </type/object/name> "raw_data_ref" .
+</epistemology/evidence_node/raw_data_ref> </type/property/schema> </epistemology/evidence_node> .
+
+# ── Type: DebunkingAttempt ───────────────────────────────────────────────────
+</epistemology/debunking_attempt> </type/object/type> </type/type> .
+</epistemology/debunking_attempt> </type/object/name> "DebunkingAttempt" .
+</epistemology/debunking_attempt> </common/topic/description> "Formal falsification effort. Outcome preserved permanently alongside original assertion." .
+
+</epistemology/debunking_attempt/method> </type/object/type> </type/property> .
+</epistemology/debunking_attempt/method> </type/property/schema> </epistemology/debunking_attempt> .
+
+</epistemology/debunking_outcome/succeeded> </type/object/type> </type/enumeration> .
+</epistemology/debunking_outcome/succeeded> </type/object/name> "succeeded" .
+
+</epistemology/debunking_outcome/failed> </type/object/type> </type/enumeration> .
+</epistemology/debunking_outcome/failed> </type/object/name> "failed" .
+
+</epistemology/debunking_outcome/inconclusive> </type/object/type> </type/enumeration> .
+</epistemology/debunking_outcome/inconclusive> </type/object/name> "inconclusive" .
+
+# ── Type: PredictiveRecord ───────────────────────────────────────────────────
+</epistemology/predictive_record> </type/object/type> </type/type> .
+</epistemology/predictive_record> </type/object/name> "PredictiveRecord" .
+</epistemology/predictive_record> </common/topic/description> "Tracks predictions from a node and outcomes. How nodes earn or lose weight over time." .
+
+</epistemology/predictive_record/prediction> </type/object/type> </type/property> .
+</epistemology/predictive_record/prediction> </type/property/schema> </epistemology/predictive_record> .
+
+</epistemology/predictive_record/date_made> </type/object/type> </type/property> .
+</epistemology/predictive_record/date_made> </type/property/schema> </epistemology/predictive_record> .
+
+</epistemology/predictive_outcome/confirmed> </type/object/type> </type/enumeration> .
+</epistemology/predictive_outcome/confirmed> </type/object/name> "confirmed" .
+
+</epistemology/predictive_outcome/falsified> </type/object/type> </type/enumeration> .
+</epistemology/predictive_outcome/falsified> </type/object/name> "falsified" .
+
+</epistemology/predictive_outcome/pending> </type/object/type> </type/enumeration> .
+</epistemology/predictive_outcome/pending> </type/object/name> "pending" .
+
+# ── Type: ContextScope ───────────────────────────────────────────────────────
+# Scope is "the context within which an assertion holds." The same claim can be
+# verified in one scope and fictional in another. The substrate registers only
+# the type and the universal physical_reality scope; PAI-system scopes are in
+# scopes.nq. Add your own scopes by extending scopes.nq.
+</epistemology/context_scope> </type/object/type> </type/type> .
+</epistemology/context_scope> </type/object/name> "ContextScope" .
+</epistemology/context_scope> </common/topic/description> "The context within which an assertion holds. Substrate: physical_reality. PAI scopes in scopes.nq." .
+
+</epistemology/scope/physical_reality> </type/object/type> </epistemology/context_scope> .
+</epistemology/scope/physical_reality> </type/object/name> "physical_reality" .
+</epistemology/scope/physical_reality> </common/topic/description> "Claims that hold in the world, independent of any narrative or system layer." .
+
+# ── Edge type definitions ────────────────────────────────────────────────────
+</epistemology/edge/supports> </type/object/type> </type/property> .
+</epistemology/edge/supports> </type/object/name> "supports" .
+</epistemology/edge/supports> </type/property/schema> </epistemology/evidence_node> .
+</epistemology/edge/supports> </common/topic/description> "evidence --[supports]--> assertion" .
+
+</epistemology/edge/contradicts> </type/object/type> </type/property> .
+</epistemology/edge/contradicts> </type/object/name> "contradicts" .
+</epistemology/edge/contradicts> </type/property/schema> </epistemology/evidence_node> .
+</epistemology/edge/contradicts> </common/topic/description> "evidence --[contradicts]--> assertion" .
+
+</epistemology/edge/derives_from> </type/object/type> </type/property> .
+</epistemology/edge/derives_from> </type/object/name> "derives_from" .
+</epistemology/edge/derives_from> </common/topic/description> "assertion --[derives_from]--> reasoning_chain" .
+
+</epistemology/edge/predicts> </type/object/type> </type/property> .
+</epistemology/edge/predicts> </type/object/name> "predicts" .
+</epistemology/edge/predicts> </common/topic/description> "assertion --[predicts]--> testable_prediction" .
+
+</epistemology/edge/scoped_to> </type/object/type> </type/property> .
+</epistemology/edge/scoped_to> </type/object/name> "scoped_to" .
+</epistemology/edge/scoped_to> </type/property/expected_type> </epistemology/context_scope> .
+</epistemology/edge/scoped_to> </common/topic/description> "assertion --[scoped_to]--> context_scope" .
+
+</epistemology/edge/emerged_from> </type/object/type> </type/property> .
+</epistemology/edge/emerged_from> </type/object/name> "emerged_from" .
+</epistemology/edge/emerged_from> </common/topic/description> "emergent --[emerged_from]--> parent_node (two or more)" .
+
+</epistemology/edge/debunking_attempted_by> </type/object/type> </type/property> .
+</epistemology/edge/debunking_attempted_by> </type/object/name> "debunking_attempted_by" .
+</epistemology/edge/debunking_attempted_by> </type/property/expected_type> </epistemology/debunking_attempt> .
+</epistemology/edge/debunking_attempted_by> </common/topic/description> "assertion --[debunking_attempted_by]--> debunking_attempt" .
+
+</epistemology/edge/has_state> </type/object/type> </type/property> .
+</epistemology/edge/has_state> </type/object/name> "has_state" .
+</epistemology/edge/has_state> </type/property/expected_type> </epistemology/epistemic_state> .
+</epistemology/edge/has_state> </common/topic/description> "node --[has_state]--> epistemic_state_value. Direct annotation for query efficiency." .
+
+</epistemology/edge/justification_type> </type/object/type> </type/property> .
+</epistemology/edge/justification_type> </type/object/name> "justification_type" .
+</epistemology/edge/justification_type> </type/property/expected_type> </epistemology/justification_type> .
+</epistemology/edge/justification_type> </common/topic/description> "node --[justification_type]--> justification_type_value. How an assertion is grounded." .
+
+</epistemology/edge/provenance> </type/object/type> </type/property> .
+</epistemology/edge/provenance> </type/object/name> "provenance" .
+</epistemology/edge/provenance> </common/topic/description> "node --[provenance]--> source_reference (literal string)." .
+
+</epistemology/edge/written_at> </type/object/type> </type/property> .
+</epistemology/edge/written_at> </type/object/name> "written_at" .
+</epistemology/edge/written_at> </common/topic/description> "node --[written_at]--> ISO-8601-UTC literal. Stamped on every assert_*. Enables recent_activity." .
+
+# ── Type: EdgeInstance (CVT — reified edge with full epistemic envelope) ─────
+# Double-encoding: direct quad kept for traversal speed; EdgeInstance node
+# carries weight, direction, epistemic state, scope, provenance.
+# Follows Freebase CVT pattern. Edge identity is deterministic (sha1 of
+# subject|predicate|object) so re-asserting the same edge is idempotent.
+</epistemology/edge_instance> </type/object/type> </type/type> .
+</epistemology/edge_instance> </type/object/name> "EdgeInstance" .
+</epistemology/edge_instance> </common/topic/description> "Reified edge node. Carries weight, direction, and epistemic state of a relationship." .
+
+</epistemology/edge_instance/subject> </type/object/type> </type/property> .
+</epistemology/edge_instance/subject> </type/object/name> "edge_subject" .
+</epistemology/edge_instance/subject> </type/property/schema> </epistemology/edge_instance> .
+
+</epistemology/edge_instance/predicate> </type/object/type> </type/property> .
+</epistemology/edge_instance/predicate> </type/object/name> "edge_predicate" .
+</epistemology/edge_instance/predicate> </type/property/schema> </epistemology/edge_instance> .
+
+</epistemology/edge_instance/object> </type/object/type> </type/property> .
+</epistemology/edge_instance/object> </type/object/name> "edge_object" .
+</epistemology/edge_instance/object> </type/property/schema> </epistemology/edge_instance> .
+
+</epistemology/edge_instance/weight> </type/object/type> </type/property> .
+</epistemology/edge_instance/weight> </type/object/name> "edge_weight" .
+</epistemology/edge_instance/weight> </type/property/schema> </epistemology/edge_instance> .
+</epistemology/edge_instance/weight> </common/topic/description> "Confidence 0.0-1.0. Earned via PredictiveRecord; not self-declared." .
+
+</epistemology/edge_instance/direction> </type/object/type> </type/property> .
+</epistemology/edge_instance/direction> </type/object/name> "edge_direction" .
+</epistemology/edge_instance/direction> </type/property/schema> </epistemology/edge_instance> .
+</epistemology/edge_instance/direction> </common/topic/description> "forward|reverse|bidirectional" .
+
+# Direction enumeration
+</epistemology/edge_direction/forward> </type/object/type> </type/enumeration> .
+</epistemology/edge_direction/forward> </type/object/name> "forward" .
+
+</epistemology/edge_direction/reverse> </type/object/type> </type/enumeration> .
+</epistemology/edge_direction/reverse> </type/object/name> "reverse" .
+
+</epistemology/edge_direction/bidirectional> </type/object/type> </type/enumeration> .
+</epistemology/edge_direction/bidirectional> </type/object/name> "bidirectional" .
