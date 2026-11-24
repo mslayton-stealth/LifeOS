@@ -30,7 +30,7 @@
 
 ---
 
-https://github.com/user-attachments/assets/329897f5-828b-4c23-b607-1cf9c71cb4ec
+https://github.com/user-attachments/assets/59c04882-92e1-490b-ab07-e84c2f46595f
 
 **LifeOS** is a General Purpose AI Harness for doing anything you want to do in life and work with AI. It captures who you are, what you care about, and where you're trying to go, then uses AI that knows you to help you get there. 
 
@@ -48,6 +48,12 @@ Stars help more people find the project and keep it moving. It takes one click.
 [![Star LifeOS on GitHub](https://img.shields.io/github/stars/danielmiessler/LifeOS?style=for-the-badge&logo=github&logoColor=white&label=Star%20LifeOS&color=8B5CF6)](https://github.com/danielmiessler/LifeOS)
 
 </div>
+
+## ⚠️ Your Security Is Your Responsibility
+
+LifeOS is fundamentally one person's personal AI harness, published as-is, and it is constantly in flux: security features are added, enhanced, removed, modified and adjusted from release to release. **The security of any LifeOS component, and of the system as a whole, is not guaranteed. Responsibility for the security of your system is yours, not the LifeOS authors' or contributors'.**
+
+Before anything is installed, the installer asks: *"Do you understand that you are responsible for the security of your own system and that we are not responsible?"* It goes ahead only if you answer yes. See [SECURITY.md](./SECURITY.md).
 
 ## Install
 
@@ -77,7 +83,7 @@ Either path needs a capable AI coding harness — we build and run on [Claude Co
 
 ## 🧩 Skills
 
-LifeOS installs as one self-contained skill that bundles the whole library — research, security, writing, art, and more. Browse them all on the site.
+LifeOS ships 97 public skills, from research, security, writing and art to video, publishing and your home. Browse them all on the site.
 
 **[Browse all skills →](https://ourlifeos.ai/skills)**
 
@@ -128,10 +134,9 @@ Recovery is straightforward:
 | Feature | Description |
 |---------|-------------|
 | **Local Model Support** | Run LifeOS with local models (Ollama, llama.cpp) for privacy and cost control |
-| **Granular Model Routing** | Route different tasks to different models based on complexity |
 | **Remote Access** | Access your LifeOS from anywhere—mobile, web, other devices |
 | **Outbound Phone Calling** | Voice capabilities for outbound calls |
-| **External Notifications** | Robust notification system for Email, Discord, Telegram, Slack |
+| **External Notifications** | Robust notification system for Email, Discord, iMessage, Slack |
 
 ---
 
@@ -184,38 +189,67 @@ MIT License - see [LICENSE](LICENSE) for details.
 LifeOS is built in the open, and the community's pull requests, forensic bug reports, and fresh-install writeups directly shape every release. The public repo is generated from a private source tree, so community PRs are ported into source with credit rather than merged directly — same fix, durable across releases.
 
 <p align="center">
-<a href="https://github.com/danielmiessler"><img src="https://avatars.githubusercontent.com/u/50654?v=4&s=64" width="48" height="48" alt="danielmiessler" title="danielmiessler"></a>
-<a href="https://github.com/christauff"><img src="https://avatars.githubusercontent.com/u/1050379?v=4&s=64" width="48" height="48" alt="christauff" title="christauff"></a>
-<a href="https://github.com/kaimagnus"><img src="https://avatars.githubusercontent.com/u/260860065?v=4&s=64" width="48" height="48" alt="kaimagnus" title="kaimagnus"></a>
-<a href="https://github.com/m4nt0de4"><img src="https://avatars.githubusercontent.com/u/176330864?v=4&s=64" width="48" height="48" alt="m4nt0de4" title="m4nt0de4"></a>
-<a href="https://github.com/ksylvan"><img src="https://avatars.githubusercontent.com/u/1226059?v=4&s=64" width="48" height="48" alt="ksylvan" title="ksylvan"></a>
-<a href="https://github.com/mvoehringer"><img src="https://avatars.githubusercontent.com/u/2719466?v=4&s=64" width="48" height="48" alt="mvoehringer" title="mvoehringer"></a>
-<a href="https://github.com/sauldataman"><img src="https://avatars.githubusercontent.com/u/156217018?v=4&s=64" width="48" height="48" alt="sauldataman" title="sauldataman"></a>
-<a href="https://github.com/sti0"><img src="https://avatars.githubusercontent.com/u/18382402?v=4&s=64" width="48" height="48" alt="sti0" title="sti0"></a>
-<a href="https://github.com/pybe"><img src="https://avatars.githubusercontent.com/u/3582919?v=4&s=64" width="48" height="48" alt="pybe" title="pybe"></a>
-<a href="https://github.com/fayerman-source"><img src="https://avatars.githubusercontent.com/u/234407473?v=4&s=64" width="48" height="48" alt="fayerman-source" title="fayerman-source"></a>
-<a href="https://github.com/neilsoult"><img src="https://avatars.githubusercontent.com/u/5273521?v=4&s=64" width="48" height="48" alt="neilsoult" title="neilsoult"></a>
-<a href="https://github.com/HotSauceHacker"><img src="https://avatars.githubusercontent.com/u/31944906?v=4&s=64" width="48" height="48" alt="HotSauceHacker" title="HotSauceHacker"></a>
-<a href="https://github.com/salmanmkc"><img src="https://avatars.githubusercontent.com/u/32169182?v=4&s=64" width="48" height="48" alt="salmanmkc" title="salmanmkc"></a>
-<a href="https://github.com/Seadubb"><img src="https://avatars.githubusercontent.com/u/174173018?v=4&s=64" width="48" height="48" alt="Seadubb" title="Seadubb"></a>
-<a href="https://github.com/StarksLabs"><img src="https://avatars.githubusercontent.com/u/281132662?v=4&s=64" width="48" height="48" alt="StarksLabs" title="StarksLabs"></a>
+<a href="https://github.com/alexfry-axeai"><img src="https://avatars.githubusercontent.com/u/308327483?v=4&s=64" width="48" height="48" alt="alexfry-axeai" title="alexfry-axeai"></a>
 <a href="https://github.com/asdf8675309"><img src="https://avatars.githubusercontent.com/u/174058705?v=4&s=64" width="48" height="48" alt="asdf8675309" title="asdf8675309"></a>
+<a href="https://github.com/Autodidact-med"><img src="https://avatars.githubusercontent.com/u/226200889?v=4&s=64" width="48" height="48" alt="Autodidact-med" title="Autodidact-med"></a>
+<a href="https://github.com/aveneri"><img src="https://avatars.githubusercontent.com/u/65974380?v=4&s=64" width="48" height="48" alt="aveneri" title="aveneri"></a>
+<a href="https://github.com/bassitone"><img src="https://avatars.githubusercontent.com/u/3283060?v=4&s=64" width="48" height="48" alt="bassitone" title="bassitone"></a>
+<a href="https://github.com/bkolendowski"><img src="https://avatars.githubusercontent.com/u/76254268?v=4&s=64" width="48" height="48" alt="bkolendowski" title="bkolendowski"></a>
+<a href="https://github.com/bowlax"><img src="https://avatars.githubusercontent.com/u/25324730?v=4&s=64" width="48" height="48" alt="bowlax" title="bowlax"></a>
+<a href="https://github.com/bytebyrobert"><img src="https://avatars.githubusercontent.com/u/32384729?v=4&s=64" width="48" height="48" alt="bytebyrobert" title="bytebyrobert"></a>
+<a href="https://github.com/christauff"><img src="https://avatars.githubusercontent.com/u/1050379?v=4&s=64" width="48" height="48" alt="christauff" title="christauff"></a>
+<a href="https://github.com/dactylmedia"><img src="https://avatars.githubusercontent.com/u/148711391?v=4&s=64" width="48" height="48" alt="dactylmedia" title="dactylmedia"></a>
+<a href="https://github.com/danielmiessler"><img src="https://avatars.githubusercontent.com/u/50654?v=4&s=64" width="48" height="48" alt="danielmiessler" title="danielmiessler"></a>
+<a href="https://github.com/Drizzt321"><img src="https://avatars.githubusercontent.com/u/15825517?v=4&s=64" width="48" height="48" alt="Drizzt321" title="Drizzt321"></a>
+<a href="https://github.com/dsather"><img src="https://avatars.githubusercontent.com/u/22476669?v=4&s=64" width="48" height="48" alt="dsather" title="dsather"></a>
+<a href="https://github.com/ebrett"><img src="https://avatars.githubusercontent.com/u/6605?v=4&s=64" width="48" height="48" alt="ebrett" title="ebrett"></a>
+<a href="https://github.com/elhoim"><img src="https://avatars.githubusercontent.com/u/178521?v=4&s=64" width="48" height="48" alt="elhoim" title="elhoim"></a>
+<a href="https://github.com/emarcelcom"><img src="https://avatars.githubusercontent.com/u/31213069?v=4&s=64" width="48" height="48" alt="emarcelcom" title="emarcelcom"></a>
+<a href="https://github.com/emory"><img src="https://avatars.githubusercontent.com/u/660055?v=4&s=64" width="48" height="48" alt="emory" title="emory"></a>
+<a href="https://github.com/fayerman-source"><img src="https://avatars.githubusercontent.com/u/234407473?v=4&s=64" width="48" height="48" alt="fayerman-source" title="fayerman-source"></a>
+<a href="https://github.com/ForgottenFates7"><img src="https://avatars.githubusercontent.com/u/165483571?v=4&s=64" width="48" height="48" alt="ForgottenFates7" title="ForgottenFates7"></a>
+<a href="https://github.com/hjo20"><img src="https://avatars.githubusercontent.com/u/167745968?v=4&s=64" width="48" height="48" alt="hjo20" title="hjo20"></a>
+<a href="https://github.com/HotSauceHacker"><img src="https://avatars.githubusercontent.com/u/31944906?v=4&s=64" width="48" height="48" alt="HotSauceHacker" title="HotSauceHacker"></a>
+<a href="https://github.com/IJASolutions"><img src="https://avatars.githubusercontent.com/u/246399781?v=4&s=64" width="48" height="48" alt="IJASolutions" title="IJASolutions"></a>
 <a href="https://github.com/imrathion"><img src="https://avatars.githubusercontent.com/u/16126111?v=4&s=64" width="48" height="48" alt="imrathion" title="imrathion"></a>
 <a href="https://github.com/jbmml"><img src="https://avatars.githubusercontent.com/u/52386063?v=4&s=64" width="48" height="48" alt="jbmml" title="jbmml"></a>
-<a href="https://github.com/justinkatz94-glitch"><img src="https://avatars.githubusercontent.com/u/247285317?v=4&s=64" width="48" height="48" alt="justinkatz94-glitch" title="justinkatz94-glitch"></a>
-<a href="https://github.com/bkolendowski"><img src="https://avatars.githubusercontent.com/u/76254268?v=4&s=64" width="48" height="48" alt="bkolendowski" title="bkolendowski"></a>
-<a href="https://github.com/smolcompute"><img src="https://avatars.githubusercontent.com/u/138336591?v=4&s=64" width="48" height="48" alt="smolcompute" title="smolcompute"></a>
-<a href="https://github.com/neilinger"><img src="https://avatars.githubusercontent.com/u/3368283?v=4&s=64" width="48" height="48" alt="neilinger" title="neilinger"></a>
-<a href="https://github.com/Mutdogus"><img src="https://avatars.githubusercontent.com/u/156828?v=4&s=64" width="48" height="48" alt="Mutdogus" title="Mutdogus"></a>
-<a href="https://github.com/qozle"><img src="https://avatars.githubusercontent.com/u/6171907?v=4&s=64" width="48" height="48" alt="qozle" title="qozle"></a>
 <a href="https://github.com/jnpkr"><img src="https://avatars.githubusercontent.com/u/1964102?v=4&s=64" width="48" height="48" alt="jnpkr" title="jnpkr"></a>
-<a href="https://github.com/IJASolutions"><img src="https://avatars.githubusercontent.com/u/246399781?v=4&s=64" width="48" height="48" alt="IJASolutions" title="IJASolutions"></a>
-<a href="https://github.com/emory"><img src="https://avatars.githubusercontent.com/u/660055?v=4&s=64" width="48" height="48" alt="emory" title="emory"></a>
-<a href="https://github.com/elhoim"><img src="https://avatars.githubusercontent.com/u/178521?v=4&s=64" width="48" height="48" alt="elhoim" title="elhoim"></a>
-<a href="https://github.com/vibecrypto"><img src="https://avatars.githubusercontent.com/u/291395314?v=4&s=64" width="48" height="48" alt="vibecrypto" title="vibecrypto"></a>
-<a href="https://github.com/dactylmedia"><img src="https://avatars.githubusercontent.com/u/148711391?v=4&s=64" width="48" height="48" alt="dactylmedia" title="dactylmedia"></a>
-<a href="https://github.com/xmasyx"><img src="https://avatars.githubusercontent.com/u/16624475?v=4&s=64" width="48" height="48" alt="xmasyx" title="xmasyx"></a>
+<a href="https://github.com/justinkatz94-glitch"><img src="https://avatars.githubusercontent.com/u/247285317?v=4&s=64" width="48" height="48" alt="justinkatz94-glitch" title="justinkatz94-glitch"></a>
+<a href="https://github.com/kaimagnus"><img src="https://avatars.githubusercontent.com/u/260860065?v=4&s=64" width="48" height="48" alt="kaimagnus" title="kaimagnus"></a>
+<a href="https://github.com/kirmalyshev"><img src="https://avatars.githubusercontent.com/u/6062525?v=4&s=64" width="48" height="48" alt="kirmalyshev" title="kirmalyshev"></a>
+<a href="https://github.com/ksylvan"><img src="https://avatars.githubusercontent.com/u/1226059?v=4&s=64" width="48" height="48" alt="ksylvan" title="ksylvan"></a>
+<a href="https://github.com/lgertel"><img src="https://avatars.githubusercontent.com/u/634985?v=4&s=64" width="48" height="48" alt="lgertel" title="lgertel"></a>
+<a href="https://github.com/lowk3y"><img src="https://avatars.githubusercontent.com/u/553127?v=4&s=64" width="48" height="48" alt="lowk3y" title="lowk3y"></a>
+<a href="https://github.com/m4nt0de4"><img src="https://avatars.githubusercontent.com/u/176330864?v=4&s=64" width="48" height="48" alt="m4nt0de4" title="m4nt0de4"></a>
+<a href="https://github.com/MarnuLombard"><img src="https://avatars.githubusercontent.com/u/2191786?v=4&s=64" width="48" height="48" alt="MarnuLombard" title="MarnuLombard"></a>
 <a href="https://github.com/maxolasersquad"><img src="https://avatars.githubusercontent.com/u/177150?v=4&s=64" width="48" height="48" alt="maxolasersquad" title="maxolasersquad"></a>
+<a href="https://github.com/mcardinali-data"><img src="https://avatars.githubusercontent.com/u/80674342?v=4&s=64" width="48" height="48" alt="mcardinali-data" title="mcardinali-data"></a>
+<a href="https://github.com/mj-deving"><img src="https://avatars.githubusercontent.com/u/260693731?v=4&s=64" width="48" height="48" alt="mj-deving" title="mj-deving"></a>
+<a href="https://github.com/Mutdogus"><img src="https://avatars.githubusercontent.com/u/156828?v=4&s=64" width="48" height="48" alt="Mutdogus" title="Mutdogus"></a>
+<a href="https://github.com/mvoehringer"><img src="https://avatars.githubusercontent.com/u/2719466?v=4&s=64" width="48" height="48" alt="mvoehringer" title="mvoehringer"></a>
+<a href="https://github.com/neilinger"><img src="https://avatars.githubusercontent.com/u/3368283?v=4&s=64" width="48" height="48" alt="neilinger" title="neilinger"></a>
+<a href="https://github.com/neilsoult"><img src="https://avatars.githubusercontent.com/u/5273521?v=4&s=64" width="48" height="48" alt="neilsoult" title="neilsoult"></a>
+<a href="https://github.com/ozymandiasscz2"><img src="https://avatars.githubusercontent.com/u/252924712?v=4&s=64" width="48" height="48" alt="ozymandiasscz2" title="ozymandiasscz2"></a>
+<a href="https://github.com/Pfassmeyer"><img src="https://avatars.githubusercontent.com/u/59696207?v=4&s=64" width="48" height="48" alt="Pfassmeyer" title="Pfassmeyer"></a>
+<a href="https://github.com/PigLardLord"><img src="https://avatars.githubusercontent.com/u/7990395?v=4&s=64" width="48" height="48" alt="PigLardLord" title="PigLardLord"></a>
+<a href="https://github.com/pybe"><img src="https://avatars.githubusercontent.com/u/3582919?v=4&s=64" width="48" height="48" alt="pybe" title="pybe"></a>
+<a href="https://github.com/qozle"><img src="https://avatars.githubusercontent.com/u/6171907?v=4&s=64" width="48" height="48" alt="qozle" title="qozle"></a>
+<a href="https://github.com/rathko"><img src="https://avatars.githubusercontent.com/u/432203?v=4&s=64" width="48" height="48" alt="rathko" title="rathko"></a>
+<a href="https://github.com/sabo961"><img src="https://avatars.githubusercontent.com/u/191984?v=4&s=64" width="48" height="48" alt="sabo961" title="sabo961"></a>
+<a href="https://github.com/salmanmkc"><img src="https://avatars.githubusercontent.com/u/32169182?v=4&s=64" width="48" height="48" alt="salmanmkc" title="salmanmkc"></a>
+<a href="https://github.com/sauldataman"><img src="https://avatars.githubusercontent.com/u/156217018?v=4&s=64" width="48" height="48" alt="sauldataman" title="sauldataman"></a>
+<a href="https://github.com/Seadubb"><img src="https://avatars.githubusercontent.com/u/174173018?v=4&s=64" width="48" height="48" alt="Seadubb" title="Seadubb"></a>
+<a href="https://github.com/smolcompute"><img src="https://avatars.githubusercontent.com/u/138336591?v=4&s=64" width="48" height="48" alt="smolcompute" title="smolcompute"></a>
+<a href="https://github.com/spazbg"><img src="https://avatars.githubusercontent.com/u/22222777?v=4&s=64" width="48" height="48" alt="spazbg" title="spazbg"></a>
+<a href="https://github.com/spec-vova"><img src="https://avatars.githubusercontent.com/u/214704101?v=4&s=64" width="48" height="48" alt="spec-vova" title="spec-vova"></a>
+<a href="https://github.com/StarksLabs"><img src="https://avatars.githubusercontent.com/u/281132662?v=4&s=64" width="48" height="48" alt="StarksLabs" title="StarksLabs"></a>
+<a href="https://github.com/sti0"><img src="https://avatars.githubusercontent.com/u/18382402?v=4&s=64" width="48" height="48" alt="sti0" title="sti0"></a>
+<a href="https://github.com/theNetworkChuck"><img src="https://avatars.githubusercontent.com/u/47433490?v=4&s=64" width="48" height="48" alt="theNetworkChuck" title="theNetworkChuck"></a>
+<a href="https://github.com/Trei-D"><img src="https://avatars.githubusercontent.com/u/63501315?v=4&s=64" width="48" height="48" alt="Trei-D" title="Trei-D"></a>
+<a href="https://github.com/tzioup"><img src="https://avatars.githubusercontent.com/u/166889479?v=4&s=64" width="48" height="48" alt="tzioup" title="tzioup"></a>
+<a href="https://github.com/vibecrypto"><img src="https://avatars.githubusercontent.com/u/291395314?v=4&s=64" width="48" height="48" alt="vibecrypto" title="vibecrypto"></a>
+<a href="https://github.com/willhern829"><img src="https://avatars.githubusercontent.com/u/59617540?v=4&s=64" width="48" height="48" alt="willhern829" title="willhern829"></a>
+<a href="https://github.com/xmasyx"><img src="https://avatars.githubusercontent.com/u/16624475?v=4&s=64" width="48" height="48" alt="xmasyx" title="xmasyx"></a>
 </p>
 
 <sup>The 28 highest-commit contributors — [see all on the contributors graph](https://github.com/danielmiessler/LifeOS/graphs/contributors). Avatars are committers only, so the lists below carry everyone the graph can't see.</sup>
@@ -258,6 +292,14 @@ badosanjos · benoitdepaire · bnkath2o · brycemagera · catchingknives · DAES
 <summary><strong>📜 Update History</strong></summary>
 
 <br/>
+
+**v8.761.0 — The One Loop**
+- **One loop at every level** — an output serves its task's ISA, a task serves its project, a project serves a TELOS goal, and the Algorithm confirms direction before it builds.
+- **Proof attached** — Assay measures every output against the ideal state it was made for; Errata records misses and HillClimb experiments until a fix holds.
+- **Development, Workflows, Vigil and STATVS** — software built and tested against its ISA, scheduled work in one system, one monitoring layer, one record of what happened.
+- **Security where the action lands** — eighteen of 7.40.4's hooks retired, most of them per-call guards; Claude Code's permission rules, git hooks and a kernel sandbox do that job now.
+- **One command to install or upgrade**, and 50 skills newly public, with Fabric's most-used patterns rewritten.
+- [Full release notes](Releases/v8.761.0/README.md)
 
 **v7.28.3 — Cortex, Hermes, and hardened releases**
 - **Cortex** — the memory system, named: hot-layer memory, a typed Knowledge Archive (People, Companies, Ideas, Research), learnings, and work history, consolidated across sessions so each one starts smarter than the last.
